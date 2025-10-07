@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>موقع القدرات والتحصيلي</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>موقع تفاعلي لقياس مستوى الطالبة في القدرات والتحصيلي</h1>
+
+    <label>اسم الطالبة:</label>
+    <input type="text" id="studentName" placeholder="أدخلي اسمك">
+
+    <label>اختاري الصف:</label>
+    <select id="grade">
+      <option>أول ثانوي</option>
+      <option>ثاني ثانوي</option>
+      <option>ثالث ثانوي</option>
+    </select>
+
+    <label>اختاري نوع الاختبار:</label>
+    <select id="examType">
+      <option value="qudrat.html">قدرات</option>
+      <option value="tahseeli.html">تحصيلي</option>
+    </select>
+
+    <button onclick="startExam()">الانتقال للاختبار</button>
+    <button onclick="window.location.href='results.html'">عرض نتائج الطالبات</button>
+
+    <footer>إعداد المعلمة: عفاف رزق الحربي</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
